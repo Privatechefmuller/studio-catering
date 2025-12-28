@@ -3,338 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eye Made It — Studio & Artist Catering | Private Chef Müller</title>
-  <meta name="description" content="Private Chef Müller provides quiet, professional, studio‑focused catering for recording sessions, writing camps, mixing days and artist retreats. Black & white, minimal, industry‑ready." />
+  <title>Private Chef Müller — Studio & Artist Catering</title>
+  <meta name="description" content="Studio-focused catering for recording sessions, writing camps and artist retreats." />
   <style>
-    :root {
-      --bg: #ffffff;
-      --fg: #0a0a0a;
-      --muted: #666;
-      --border: #111;
-      --accent: #0a0a0a;
-      --maxw: 1120px;
-      --pad: 20px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
-    a{color:var(--fg);text-decoration:none;border-bottom:1px solid transparent}
-    a:hover{border-bottom-color:var(--fg)}
-    .container{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
-    .stack{display:flex;flex-direction:column;gap:32px}
-    h1,h2,h3{margin:0 0 12px 0;line-height:1.15}
-    h1{font-weight:800;font-size:clamp(30px,5vw,56px);letter-spacing:-0.02em}
-    h2{font-weight:700;font-size:clamp(22px,3vw,32px)}
-    h3{font-weight:700;font-size:clamp(18px,2.2vw,22px)}
-    p{margin:0 0 8px 0}
-    ul{margin:0;padding-left:18px}
-    /* Header */
-    header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--border);z-index:10}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .brand{font-weight:800;letter-spacing:0.04em;text-transform:uppercase}
-    .menu{display:flex;gap:18px;flex-wrap:wrap}
-    .menu a{font-size:14px;text-transform:uppercase;letter-spacing:0.08em}
-    /* Hero */
-    .hero{padding:72px 0;border-bottom:1px solid var(--border)}
-    .kicker{font-size:12px;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted)}
-    .lede{font-size:18px;color:var(--muted)}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
-    .btn{display:inline-block;padding:12px 18px;border:1px solid var(--fg);text-transform:uppercase;letter-spacing:0.08em;font-size:12px;font-weight:700}
-    .btn.fill{background:var(--fg);color:var(--bg)}
-    /* Sections */
-    section{padding:56px 0;border-bottom:1px solid var(--border)}
-    .grid{display:grid;gap:20px}
-    .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-    .card{border:1px solid var(--border);padding:18px}
-    .muted{color:var(--muted)}
-    .list-plain{list-style:none;padding:0}
-    .list-plain li{margin:6px 0}
-    .price{font-weight:800}
-    .divider{border-top:1px solid var(--border);margin:8px 0 0 0}
-    /* Footer */
-    footer{padding:32px 0}
-    .foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;color:var(--muted);border-top:1px solid var(--border)}
-    .foot a{color:var(--muted)}
-    /* Responsive */
-    @media (max-width: 860px){
-      .cols-2,.cols-3{grid-template-columns:1fr}
-      .nav{height:auto;padding:10px 0}
-    }
-    /* Print */
-    @media print{
-      header,.btn,.cta-row{display:none !important}
-      a{border:0}
-      section{page-break-inside:avoid}
-      body{color:#000}
-    }
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff;color:#111}
+    h1,h2,h3{margin:0 0 12px 0}
+    .container{max-width:1100px;margin:auto;padding:24px}
+    header{border-bottom:1px solid #111;padding:18px 0}
+    section{border-bottom:1px solid #111;padding:48px 0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .card{border:1px solid #111;padding:18px}
+    img{width:100%;height:auto;display:block}
+    .muted{color:#555}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand">Eye Made It <span style="font-weight:400;letter-spacing:0.02em">— by Private Chef Müller</span></div>
-      <nav class="menu">
-        <a href="#what">What We Do</a>
-        <a href="#why">Why Studios</a>
-        <a href="#rates">Day Rates</a>
-        <a href="#blocks">Blocks</a>
-        <a href="#menus">Menus</a>
-        <a href="#whyus">Why Us</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<header>
+  <div class="container">
+    <h1>Private Chef Müller</h1>
+    <p class="muted">Studio & Artist Catering</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>A Chef & a Musician Supporting the Creative Flow</h2>
+    <p class="muted">Quiet, professional catering designed to protect momentum and support long studio sessions.</p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="assets/bio/gerda-portrait.jpg" alt="Gerda Müller portrait">
+        <h3>Gerda Müller — Private Chef</h3>
+        <p class="muted">British–Brazilian chef with over 10 years experience across Europe, delivering calm, consistent, high‑quality food for creative environments.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/bio/danny-portrait.jpg" alt="Danny Robinson portrait">
+        <h3>Danny Robinson — Studio Liaison</h3>
+        <p class="muted">Musician and producer with 20+ years experience. Understands studio flow, etiquette, and how to support artists without disruption.</p>
+      </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero" id="top">
-      <div class="container stack">
-        <span class="kicker">Eye Made It — Studio & Artist Catering</span>
-        <h1>Eye Made It.<br/>Fuel for Creativity. Support for the Session.</h1>
-        <p class="lede">Quiet, professional, black‑and‑white service for recording studios, writing camps, mixing days and artist retreats. Breakfast → Dinner. Clean fuel, comfort bowls, vocalist support and late‑night producer food.</p>
-        <div class="cta-row">
-          <a class="btn" href="#menus">View Studio Menu</a>
-          <a class="btn fill" href="#contact">Request Availability</a>
-        </div>
-      </div>
-    </section>
+<footer>
+  <div class="container muted">
+    © Private Chef Müller
+  </div>
+</footer>
 
-    <!-- What We Do -->
-    <section id="what">
-      <div class="container">
-        <div class="stack">
-          <h2>Built for the Studio. Designed for the Session.</h2>
-          <div class="grid cols-2">
-            <div>
-              <p>Full‑day, on‑site catering designed specifically for recording artists, producers, engineers and management. We protect the creative flow with meals that sustain energy and mood across long sessions.</p>
-            </div>
-            <div>
-              <ul class="list-plain">
-                <li>• Breakfast → Dinner</li>
-                <li>• Clean fuel menus</li>
-                <li>• Comfort & vibe dishes</li>
-                <li>• Vocalist‑friendly options</li>
-                <li>• Late‑night producer food</li>
-                <li>• Studio snack bars</li>
-                <li>• Hydration & juice programs</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Studios Book Us -->
-    <section id="why">
-      <div class="container stack">
-        <h2>Food That Supports the Music</h2>
-        <div class="grid cols-3">
-          <div class="card">
-            <h3>Artist Performance</h3>
-            <p class="muted">Meals designed to sustain energy, focus and emotional flow.</p>
-          </div>
-          <div class="card">
-            <h3>Zero Disruptions</h3>
-            <p class="muted">No food runs, no breaks in momentum — we work quietly around the session.</p>
-          </div>
-          <div class="card">
-            <h3>Predictable Budgets</h3>
-            <p class="muted">Fixed day rates. No surprises. No per‑meal billing.</p>
-          </div>
-          <div class="card">
-            <h3>Studio Etiquette</h3>
-            <p class="muted">Calm, discreet, professional. We blend into the environment.</p>
-          </div>
-          <div class="card">
-            <h3>Healthy + Comfort</h3>
-            <p class="muted">Clean food for focus; warm food for long days and late nights.</p>
-          </div>
-          <div class="card">
-            <h3>Reliable Presence</h3>
-            <p class="muted">We show up, work hard, and support the entire creative arc.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Day Rates -->
-    <section id="rates">
-      <div class="container stack">
-        <h2>Studio Day Rates</h2>
-        <div class="grid cols-2">
-          <div class="card">
-            <h3>Standard Studio Day</h3>
-            <p class="price">£350</p>
-            <ul>
-              <li>Up to 4 people</li>
-              <li>All meals included</li>
-              <li>8–12 hours</li>
-              <li>Chef + assistant</li>
-            </ul>
-            <p class="divider"></p>
-            <p><strong>Additional people:</strong> +£30 each (5th–8th)</p>
-            <p class="muted">Maximum 8 people per day with 1 chef + 1 assistant.</p>
-          </div>
-          <div class="card">
-            <h3>Gourmet / VIP Session</h3>
-            <p class="price">£450</p>
-            <ul>
-              <li>Up to 4 people</li>
-              <li>Premium ingredients</li>
-              <li>Plated service</li>
-              <li>Label‑supported sessions</li>
-            </ul>
-            <p class="divider"></p>
-            <p><strong>Additional people:</strong> +£40 each</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blocks -->
-    <section id="blocks">
-      <div class="container stack">
-        <h2>Writing Camps & Residencies</h2>
-        <div class="grid cols-2">
-          <div class="card">
-            <h3>3–7 Day Block</h3>
-            <p class="price">£1,000–£2,500</p>
-            <p class="muted">Rotating menus, hydration, snack boards and vocalist support.</p>
-          </div>
-          <div class="card">
-            <h3>7–14 Day Block</h3>
-            <p class="price">£2,200–£4,500</p>
-            <p class="muted">Ideal for album cycles, label retreats and long‑form writing camps.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Menus -->
-    <section id="menus">
-      <div class="container stack">
-        <h2>Studio Menus</h2>
-        <div class="grid cols-3">
-          <div class="card">
-            <h3>Clean Fuel</h3>
-            <p class="muted">Light, high‑energy meals designed for focus.</p>
-            <ul>
-              <li>Grilled lemon chicken + quinoa</li>
-              <li>Salmon bowls + steamed greens</li>
-              <li>Butternut squash curry (light coconut)</li>
-              <li>Veg one‑pots, fruit & nuts</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Comfort & Vibe</h3>
-            <p class="muted">Warm, familiar dishes for heavy writing days.</p>
-            <ul>
-              <li>Slow‑cooked chilli + rice</li>
-              <li>Garlic chicken pasta</li>
-              <li>Brazilian stroganoff</li>
-              <li>Toasties, wraps & banana bread</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Gourmet</h3>
-            <p class="muted">Premium, plated meals for VIP and label‑backed sessions.</p>
-            <ul>
-              <li>Herb‑crusted salmon</li>
-              <li>Chicken supreme</li>
-              <li>Risotto (mushroom / lemon asparagus)</li>
-              <li>Steak with chimichurri</li>
-            </ul>
-          </div>
-        </div>
-        <div class="grid cols-3">
-          <div class="card">
-            <h3>Late‑Night Producers</h3>
-            <ul>
-              <li>Ramen & ginger broth</li>
-              <li>Pesto pasta bowls</li>
-              <li>Producer potatoes</li>
-              <li>Wraps & snacks</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Vocalist Support</h3>
-            <ul>
-              <li>Broths & honey oats</li>
-              <li>Steamed fish & soft veg</li>
-              <li>Low‑acid, anti‑inflammatory</li>
-              <li>Warm hydration service</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Add‑Ons</h3>
-            <ul>
-              <li>Juice program (£10–£30 pp/day)</li>
-              <li>Snack bar setup (£25–£60 pp/day)</li>
-              <li>Vegan/complex dietary upgrade (£20–£50)</li>
-              <li>Late‑night support (£50–£150)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Us -->
-    <section id="whyus">
-      <div class="container stack">
-        <h2>A Chef & a Musician Supporting the Creative Flow</h2>
-        <div class="grid cols-2">
-          <div class="card">
-            <h3>Gerda Müller — Private Chef</h3>
-            <p class="muted">British–Brazilian chef with 10+ years across Europe: private villas, retreats and high‑end dining. Precision, warmth and consistency tailored to long studio days.</p>
-          </div>
-          <div class="card">
-            <h3>Danny Robinson — Studio Liaison</h3>
-            <p class="muted">20+ years as musician, DJ and producer. Understands session rhythm, studio etiquette and how to operate quietly around artists, engineers and producers.</p>
-          </div>
-        </div>
-        <p><strong>Together:</strong> not just catering — part of the creative process. Food that fuels the music, service that protects the flow.</p>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container stack">
-        <h2>Contact</h2>
-        <div class="grid cols-2">
-          <div class="card">
-            <h3>Eye Made It — Studio & Artist Catering<br/><span class="muted">by Private Chef Müller</span></h3>
-            <p class="muted">Suffolk • Norfolk • Cambridgeshire • London • UK‑wide on request</p>
-            <p>Phone: <a href="tel:+447703199435">07703 199435</a></p>
-            <p>Email: <a href="mailto:privatechefmuller@gmail.com">privatechefmuller@gmail.com</a></p>
-            <p>Web: <a href="https://www.privatechefgerdamuller.com" target="_blank" rel="noopener">privatechefgerdamuller.com</a></p>
-            <div class="cta-row">
-              <a class="btn" href="#rates">View Rates</a>
-              <a class="btn fill" href="mailto:privatechefmuller@gmail.com?subject=Studio%20Catering%20Availability&body=Hi%20Gerda%20and%20Danny,%0D%0A%0D%0AWe'd%20like%20to%20check%20availability%20for%20studio%20catering.%20Details%20below:%0D%0A%0D%0AStudio:%0D%0ADates:%0D%0AHeadcount:%0D%0AType%20of%20session:%20(Recording/Writing/Mix/Retreat)%0D%0ASpecial%20dietary%20needs:%0D%0A%0D%0AThanks!">Request Availability</a>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Booking Notes</h3>
-            <ul>
-              <li>Day rate covers up to 4 people; add‑ons per head thereafter.</li>
-              <li>We coordinate kitchen access and service times around your session plan.</li>
-              <li>Discreet service; we keep spaces clean and low‑impact.</li>
-              <li>Dietary requirements welcomed with prior notice.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container foot">
-      <div>© <span id="year"></span> Private Chef Müller</div>
-      <div><a href="#top">Back to top ↑</a></div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
